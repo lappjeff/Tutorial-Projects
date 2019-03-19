@@ -1,0 +1,11 @@
+$colors : (
+    primary: #05386B,
+    primary-light: lighten(#05386B, 40%),
+    primary-dark: darken(#05386B, 40%),
+    accent: #5CDB95
+);
+
+$padding: 15px;
+$borders: 15px;
+
+$desktop: 840px;
