@@ -1,10 +1,20 @@
 import React from 'react'
-
-const Footer = props => {
+import { Paper, Tabs, Tab} from '@material-ui/core'
+const Footer = ({muscles}) => {
   return (
-    <div>
-      <h1>Footer</h1>
-    </div>
+    <Paper>
+      <Tabs
+        value={0}
+        indicatorColor="primary"
+        textColor="primary"
+        centered
+      >
+        <Tab label='All' />
+        {muscles.map(muscleGroup =>
+          <Tab label={muscleGroup} />
+        )}
+      </Tabs>
+    </Paper>
   )
 }
 

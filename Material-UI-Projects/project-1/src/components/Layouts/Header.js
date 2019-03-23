@@ -1,10 +1,16 @@
 import React from 'react'
+//Material UI imports
+import {AppBar, Typography, Toolbar} from '@material-ui/core'
 
 const Header = props => {
   return (
-    <div>
-      <h1>Header</h1>
-    </div>
+    <AppBar position='static'>
+      <Toolbar>
+        <Typography variant='headline' color='inherit'>
+          Exercise Database
+        </Typography>
+      </Toolbar>
+    </AppBar>
   )
 }
 
